@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: serviceconsume-feign
+
+server:
+  port: 8764
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8861/eureka/,http://server2:8761/eureka/,http://server3:8961/eureka/
+feign:
+  hystrix:
+    enabled: true  #开启feign熔断器
