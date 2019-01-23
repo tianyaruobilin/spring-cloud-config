@@ -1,4 +1,7 @@
 spring:
+  #需要被zipkin链路追踪
+  zipkin:
+    base-url: http://localhost:9411
   application:
     name: serviceconsume-feign
 
