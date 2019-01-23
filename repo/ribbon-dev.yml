@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service-consume-hello-ribbon
+#  thymeleaf:
+#    cache: false
+#    mode: LEGACYHTML5
+#    encoding: UTF-8
+#    servlet:
+#      content-type: text/html
+
+server:
+  port: 8763
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8861/eureka/,http://server2:8761/eureka/,http://server3:8961/eureka/

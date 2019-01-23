@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: serviceprovider-hello
+
+server:
+  port: 8762
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8861/eureka/,http://server2:8761/eureka/,http://server3:8961/eureka/
