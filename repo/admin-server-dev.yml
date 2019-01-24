@@ -5,7 +5,7 @@ spring:
     base-url: http://localhost:9411
 
 server:
-  port: 9412
+  port: 8084  #默认端口号
 
 management:
   endpoint:
