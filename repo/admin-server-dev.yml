@@ -1,6 +1,7 @@
 spring:
   application:
-    name: adminserver
+    name: admin-server
+  #需要被zipkin链路追踪
   zipkin:
     base-url: http://localhost:9411
 
