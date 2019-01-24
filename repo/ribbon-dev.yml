@@ -1,9 +1,9 @@
 spring:
+  application:
+    name: ribbon
   #需要被zipkin链路追踪
   zipkin:
     base-url: http://localhost:9411
-  application:
-    name: ribbon
 #  thymeleaf:
 #    cache: false
 #    mode: LEGACYHTML5
