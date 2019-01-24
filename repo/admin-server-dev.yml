@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: admin-server
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 9412
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info"]
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8761/eureka/,http://server2:8861/eureka/,http://server3:8961/eureka/
