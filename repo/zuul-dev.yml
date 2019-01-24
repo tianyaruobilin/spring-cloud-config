@@ -20,4 +20,4 @@ zuul:
       serviceId: serviceconsume-feign
     api-b:
       path: /api/ribbon/**
-      serviceId: service-consume-hello-ribbon
+      serviceId: ribbon
